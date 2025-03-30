@@ -1,0 +1,32 @@
+{
+  "name": "japanese-language",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev:vite": "deno run -A npm:vite",
+    "build": "vue-tsc -b && vite build",
+    "preview": "vite preview",
+    "storybook": "deno task storybook"
+  },
+  "dependencies": {
+    "@storybook/addon-essentials": "^8.6.11",
+    "@storybook/manager-api": "^8.6.11",
+    "@storybook/vue3": "^8.6.11",
+    "@storybook/vue3-vite": "^8.6.11",
+    "@supabase/supabase-js": "^2.49.1",
+    "@vueuse/core": "^12.7.0",
+    "pinia": "^3.0.1",
+    "storybook": "^8.6.11",
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.1",
+    "@vue/tsconfig": "^0.7.0",
+    "typescript": "~5.7.2",
+    "vite": "^6.2.0",
+    "vite-plugin-vue-devtools": "^7.7.2",
+    "vue-tsc": "^2.2.4"
+  }
+}

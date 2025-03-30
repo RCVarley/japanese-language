@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "lib": ["deno.ns", "es2022"]
+  },
+  "imports": {
+    "@/": "./src/",
+    "@lib/": "./lib/"
+  },
+  "fmt": {
+    "semiColons": false,
+    "singleQuote": true
+  },
+  "tasks": {
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  }
+}

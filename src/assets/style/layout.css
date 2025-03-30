@@ -1,0 +1,68 @@
+:root {
+}
+
+.background {
+  z-index: -1;
+}
+
+.foreground {
+  z-index: 1;
+}
+
+body {
+  margin: 0;
+}
+
+#app {
+  max-width: 1280px;
+  width: 100dvw;
+  height: 100dvh;
+}
+
+.page {
+  display: grid;
+  width: 100dvw;
+  height: 100dvh;
+
+  > * {
+    outline: 2px solid darkred;
+  }
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.col-span-1 {
+  grid-column: span 1;
+}
+
+.col-span-2 {
+  grid-column: span 2;
+}
+
+.self-end {
+  align-self: end;
+}

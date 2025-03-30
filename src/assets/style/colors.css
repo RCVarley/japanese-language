@@ -1,0 +1,63 @@
+:root {
+  --c-main: #242424;
+  --c-on-main: rgba(255, 255, 255, 0.87);
+  --c-main-standout: #3c3a3a;
+
+  --c-sentence: #0088da;
+  --c-on-sentence: #ffffff;
+
+  --c-word: #dd8e00;
+  --c-on-word: #ffffff;
+
+  --c-grammar: #3daa25;
+  --c-on-grammar: #ffffff;
+
+  --bg: --c-on-main;
+  --bg-lc: oklch(from var(--bg) calc(l - 0.2) c h);
+  --bg-hc: oklch(from var(--bg) calc(l + 0.2) c h);
+
+  --fg: --c-grammar;
+  --fg-lc: oklch(from var(--fg) calc(l - 0.2) c h);
+  --fg-hc: oklch(from var(--fg) calc(l + 0.2) c h);
+
+  color-scheme: light dark;
+  color: var(--c-on-main);
+  background-color: var(--c-main);
+}
+
+.c-sentence {
+  --fg: var(--c-on-sentence);
+  --bg: var(--c-sentence);
+}
+
+.c-word {
+  --fg: var(--c-on-word);
+  --bg: var(--c-word);
+}
+
+.c-grammar {
+  --fg: var(--c-on-grammar);
+  --bg: var(--c-grammar);
+}
+
+.c-sentence,
+.c-word,
+.c-grammar {
+  --bg-lc: oklch(from var(--bg) calc(l - 0.1) c h);
+  --bg-hc: oklch(from var(--bg) calc(l + 0.2) c h);
+  --fg-lc: oklch(from var(--fg) calc(l - 0.1) c h);
+  --fg-hc: oklch(from var(--fg) calc(l + 0.2) c h);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
