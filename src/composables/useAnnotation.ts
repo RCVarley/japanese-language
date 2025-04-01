@@ -21,6 +21,7 @@ export function useAnnotation(params: UseAnnotationParams) {
    * @param characters
    */
   function markWord(characters: BaseChar[]) {
+    //todo: create proper IDs before API
     const id = words.value.length + 1
 
     const word: Word = {
@@ -50,6 +51,7 @@ export function useAnnotation(params: UseAnnotationParams) {
    * @param items
    */
   function markGrammar(items: TextItem[]) {
+    //todo: create proper IDs before API
     const id = grammarPoints.value.length + 1
 
     const grammarPoint: GrammarPoint = {
@@ -66,8 +68,10 @@ export function useAnnotation(params: UseAnnotationParams) {
   }
 
   return {
+    words,
     markWord,
     activeWord,
+    grammarPoints,
     markGrammar,
     activeGrammarPoint,
   }
